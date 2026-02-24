@@ -4,3 +4,8 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 #
+model_name: "nishimoto/contriever-sentencetransformer"
+model_kwargs:
+  device: "cuda:0"
+encode_kwargs:
+  normalize_embeddings: True

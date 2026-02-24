@@ -1,0 +1,15 @@
+# Copyright (c) 2025-present, Royal Bank of Canada.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+#
+name: "msmarco_v2"
+separator: ""
+chunk_size: 50000
+chunk_overlap: 0
+persist_directory: "{working_dir}/data/real/MS_MARCO_v2/msmarco_v2_vectorstore"
+qa_dataset: "{working_dir}/data/real/MS_MARCO_v2/queries_list.json"
+corpus_dataset: "{working_dir}/data/real/MS_MARCO_v2/passage_list.json"
+# Memory management: Process queries in batches to prevent OOM
+processing_batch_size: 50  # Adjust based on available memory (smaller = less memory usage)

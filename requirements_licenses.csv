@@ -1,0 +1,15 @@
+package_name,license_type
+datasets,Apache-2.0
+hydra-core,MIT
+ir_datasets,Apache-2.0
+langchain,MIT
+langchain_chroma,MIT
+langchain_core,MIT
+langchain_huggingface,MIT
+langchain_text_splitters,MIT
+numpy,BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0
+omegaconf,BSD License
+torch,BSD-3-Clause
+tqdm,MIT
+transformers,Apache-2.0
+wandb,MIT

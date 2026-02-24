@@ -1,0 +1,45 @@
+# Copyright (c) 2025-present, Royal Bank of Canada.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+#
+method_name: "EBCAR"
+mode: ???
+
+seed: 0
+working_dir: "{working_dir}"
+use_cuda: True
+n_cuda: 0
+save_dir: "{working_dir}/saved"
+log_wandb: True
+
+# Adding positional encoding and allowing hybrid attention is the full version of EBCAR
+add_positional_encoding: True
+use_dedicated_attention: True
+
+d_model: 768 # 768 for EBCAR with Contriever, 1024 for EBCAR with E5-Large
+nhead: 8
+num_layers: 16
+temperature: 1.0
+
+learning_rate: 1e-3
+weight_decay: 0.0
+num_epochs: 20
+batch_size: 256
+validation_data_ratio: 0.1
+patience: 5
+MRR_at: 10
+nDCG_at: 10
+training_data_size: null # If null, use all training data
+validation_data_size: 2000 # If null, use all validation data
+
+test_dataset_name: "conteb_test_01MLDR"
+
+retrieval:
+  top_k: 20
+
+defaults:
+  - retrieval_model: contriever
+  - dataset: conteb_train
+  - validation_dataset: conteb_val

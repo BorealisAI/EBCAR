@@ -1,0 +1,20 @@
+# Copyright (c) 2025-present, Royal Bank of Canada.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+#
+datasets==4.5.0
+hydra-core==1.3.2
+ir_datasets==0.5.11
+langchain==1.2.9
+langchain_chroma==1.1.0
+langchain_core==1.2.9
+langchain_huggingface==1.2.0
+langchain_text_splitters==1.1.0
+numpy==2.4.2
+omegaconf==2.3.0
+torch==2.3.1
+tqdm==4.66.5
+transformers==4.45.2
+wandb==0.24.2
