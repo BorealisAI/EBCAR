@@ -1,6 +1,6 @@
 # Embedding-Based-Context-Aware-Reranker
 
-This repository contains the official implementation for the paper ["Embedding-Based Context-Aware Reranker (EBCAR)"](https://openreview.net/forum?id=OBMcxeSK5U), which is accepted by ICLR 2026.
+This repository contains the official implementation for the paper ["Embedding-Based Context-Aware Reranker (EBCAR)"](https://proceedings.iclr.cc/paper_files/paper/2026/hash/9dae2a90bae49dc874ce1ca8fcc20879-Abstract-Conference.html), which is accepted by ICLR 2026.
 
 ## Folder Structure
 ```bash
